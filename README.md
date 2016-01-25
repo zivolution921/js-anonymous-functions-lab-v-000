@@ -10,6 +10,10 @@ You've been hired to work for an online Juke Box company. Your job is to clean u
 
 ## Instructions
 
+
+click events that take in callback functions that are defined somewhere else - refactor it so that all the callback functions are anonymous
+
+
 should contain a fully functioning juke box ("hash of songs (key is artist - value is song") with the following features:
 
   + should be menu button (display options: play, pause, next, display songs)
