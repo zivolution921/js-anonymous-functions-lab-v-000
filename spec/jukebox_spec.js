@@ -71,6 +71,3 @@ describe('Jukebox', function() {
   });
 
 });
-);
-
-});
