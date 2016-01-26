@@ -30,11 +30,11 @@ describe('Jukebox', function() {
   });
 
   it('#play displays the song being played', function() {
-    var songToPlay = "halo";
-    var theArtist = "beyonce";
+    // var songToPlay = "halo";
+    // var artist = "beyonce";
     play();
     $('#play').click();
-    expect($('#songPlaying').text()).toEqual(......);
+    expect($('#songPlaying').text()).toMatch("now playing");
   });
 
   it('#pause adds a click event to the pause button', function() {
@@ -51,7 +51,7 @@ describe('Jukebox', function() {
     var songToPlay = "halo";
     pause();
     $("#pause").click();
-    expect($('#songPaused').text()).toEqual("....");
+    expect($('#songPaused').text()).toMatch("is paused");
   });
 
     it('#show adds a click event to the show button', function() {
