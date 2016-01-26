@@ -6,22 +6,11 @@
 
 ## Intro
 
-You've been hired to work for an online Juke Box company. Your job is to clean up their messy code and to replace any defined functions that are only used once with an anonymous function. 
+You've been hired to work for an online Juke Box company. Your job is to clean up their messy code and to replace any defined functions that are only used once with an anonymous function. Remember where you most commonly see anonymous functions, and replace carefully!
 
 ## Instructions
 
+You will be coding your solution in `js/jukebox.js`. You'll want to make sure that things work in both the browser and the tests. It's important to note that the function calls in the document ready will need to be commented out in order for the tests to run.
 
-click events that take in callback functions that are defined somewhere else - refactor it so that all the callback functions are anonymous
+The tests currently all pass. You'll want to make sure they continue to pass once you're done refactoring.
 
-
-should contain a fully functioning juke box ("hash of songs (key is artist - value is song") with the following features:
-
-  + should be menu button (display options: play, pause, next, display songs)
-  + button to pause song - displays text `"<song_name> is paused"`
-  + button to play song - displays text `"<song_name> by <artist_name> is now  playing"`
-  + button to display songs - iterates over song "hash" and displays all songs and artist
-
-
-students should refactor functions that are only used once to anonymous functions.
-
-needs to have tests.

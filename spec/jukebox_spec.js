@@ -30,12 +30,11 @@ describe('Jukebox', function() {
   });
 
   it('#play displays the song being played', function() {
-    //failing
     var songToPlay = "halo";
     var theArtist = "beyonce";
     play();
-    //#play undefined?
-    expect($('#songPlaying').text()).toEqual("now playing halo by beyonce");
+    $('#play').click();
+    expect($('#songPlaying').text()).toEqual(......);
   });
 
   it('#pause adds a click event to the pause button', function() {
@@ -49,10 +48,10 @@ describe('Jukebox', function() {
   });
 
   it('#pause displays the song being paused', function() {
-    //failing
     var songToPlay = "halo";
     pause();
-    expect($('#songPaused').text()).toEqual("halo is paused");
+    $("#pause").click();
+    expect($('#songPaused').text()).toEqual("....");
   });
 
     it('#show adds a click event to the show button', function() {
@@ -66,9 +65,9 @@ describe('Jukebox', function() {
   });
 
   it('#show displays the songs in the jukebox', function() {
-    //failing
-    show()
-    expect($('#showSongs').text()).toEqual("in the clear by taylor swift is available to play. halo by beyonce is available to play. hotline bling by drake is available to play.");
+    show();
+    $('#show').click();
+    expect($('#showSongs').text()).toEqual("in the clear by taylor swift is available to play. halo by beyonce is available to play. hotline bling by drake is available to play. ");
   });
 
 });
