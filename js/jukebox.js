@@ -1,16 +1,15 @@
 $(document).ready(function(){
 
-  // menu();
-  // play();
-  // pause();
-  // show();
+  menu();
+  play();
+  pause();
+  show();
 
 
 });
 
   var jukeboxSongs = { "taylor swift": "in the clear", "beyonce": "halo", "drake": "hotline bling"};
   var artists = Object.keys(jukeboxSongs);
-  //look at generating a random number - Math.floor(Math.random()) is always generating 0 
   var theArtist = artists[Math.floor(Math.random()*artists.length)];
   var songToPlay = jukeboxSongs[theArtist];
 
