@@ -26,3 +26,4 @@ should contain a fully functioning juke box ("hash of songs (key is artist - val
 students should refactor functions that are only used once to anonymous functions.
 
 needs to have tests.
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-anonymous-functions-lab' title='Juke Box Mania'>Juke Box Mania</a> on Learn.co and start learning to code for free.</p>
