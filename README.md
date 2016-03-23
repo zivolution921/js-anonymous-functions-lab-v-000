@@ -6,7 +6,33 @@
 
 ## Intro
 
-You've been hired to work for an online Juke Box company. Your job is to clean up their messy spaghetti code — it's filled with anonymous functions — into named functions.
+You've been hired to work for an online Juke Box company. Your job is to clean up their messy spaghetti code. Right now, it's filled with anonymous functions; we want to refactor those functions into named functions.
+
+So for example, we'll take something like
+
+```javascript
+function menu() {
+  $('#menu').on('click', function(e) {
+    // do stuff, e.g.:
+    
+    console.log('#menu was clicked!');
+  });
+}
+```
+
+and change it to
+
+```javascript
+function menu() {
+  $('#menu').on('click', handleMenuClick);
+}
+
+function handleMenuClick(e) {
+  // do stuff, e.g.:
+    
+  console.log('#menu was clicked!');
+}
+```
 
 ## Instructions
 
